@@ -79,7 +79,7 @@ st_folium(map_view, width=700, height=500)
 
 
 # Heatmap
-st.subheader("ight Density Heatmap")
+st.subheader("Light Density Heatmap")
 heatmap_map = folium.Map(location=[51.45, 5.48], zoom_start=13)
 heat_data = filtered_df[["lat", "lon"]].dropna().values.tolist()
 HeatMap(heat_data).add_to(heatmap_map)
